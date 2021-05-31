@@ -18,4 +18,9 @@ Documentação: https://docs.cypress.io/guides/getting-started/installing-cypres
 ```
 click em 'Run 6 integration specs'
 ```
+![Cypress tests run](https://github.com/Rogerio-Viana/conforce/blob/master/testes/screenSnapShotTestRun.png)
 
+
+### Testes automatizados finalizados
+
+![Cypress tests run](https://github.com/Rogerio-Viana/conforce/blob/master/testes/testIntegrationRun.png)
