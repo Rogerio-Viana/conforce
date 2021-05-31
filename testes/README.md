@@ -12,10 +12,10 @@ Documentação: https://docs.cypress.io/guides/getting-started/installing-cypres
 ```
 Documentação: https://docs.cypress.io/guides/getting-started/installing-cypress#Opening-Cypress
 
-img
-
+![Cypress tests](https://github.com/Rogerio-Viana/conforce/blob/master/testes/screenSnapShotTest.png)
 
 ### Executar testes
 ```
-npm run build
+click em 'Run 6 integration specs'
 ```
+
