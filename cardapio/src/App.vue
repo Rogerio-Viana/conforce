@@ -7,7 +7,7 @@
         <v-spacer></v-spacer>
 
         <v-btn
-          href="https://github.com/vuetifyjs/vuetify/releases/latest"
+          href="https://github.com/Rogerio-Viana/conforce"
           target="_blank"
           text
         >
