@@ -1,0 +1,72 @@
+<div class="toolbar">
+    <mat-toolbar>
+        <span>Conforce</span>
+        <span class="spacer"></span>
+    </mat-toolbar>
+</div>
+
+<div class="main">
+    <div class="container">
+        <mat-card>
+            <mat-grid-list cols="12">
+                <mat-grid-tile colspan="12">
+                    <h3 class="mdc-typography--headline3">Dobro do número</h3>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="5">
+                    <mat-form-field>
+                        <mat-label>Número</mat-label>
+                        <input matInput [(ngModel)]="numeroDobro" (input)="calcDobro()" placeholder="Ex: 123">
+                        <mat-hint align="start"><strong>Digite somente números</strong> </mat-hint>
+                        <span matSuffix>x 2</span>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="2">
+                    <span>=</span>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="5">
+                    <mat-form-field>
+                        <mat-label>Resultado</mat-label>
+                        <input matInput readonly placeholder="Resultado" [(ngModel)]="resultadoDobro">
+                    </mat-form-field>
+                </mat-grid-tile>
+            </mat-grid-list>
+            <mat-grid-list cols="12">
+                <mat-divider></mat-divider>
+            </mat-grid-list>
+
+            <mat-grid-list cols="12">
+                <mat-grid-tile colspan="12">
+                    <h3 class="mdc-typography--headline3">Dias entre 'n' meses</h3>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="3">
+                    <mat-form-field>
+                        <mat-label>Meses</mat-label>
+                        <input matInput [(ngModel)]="numeroMes" (input)="calcMes()" placeholder="Ex: 123">
+                        <mat-hint align="start"><strong>Digite somente números</strong> </mat-hint>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1">
+                    <span>x</span>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="3">
+                    <mat-form-field>
+                        <mat-label>Dias por mês</mat-label>
+                        <input matInput [(ngModel)]="diaMes" (input)="calcMes()" placeholder="Ex: 123">
+                        <mat-hint align="start"><strong>Digite somente números</strong> </mat-hint>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="1">
+                    <span>=</span>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="3">
+                    <mat-form-field>
+                        <mat-label>Resultado</mat-label>
+                        <input matInput readonly placeholder="Resultado" [(ngModel)]="resultadoMes">
+                    </mat-form-field>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
